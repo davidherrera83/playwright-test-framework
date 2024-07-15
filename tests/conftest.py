@@ -1,8 +1,9 @@
 import pytest
 from playwright.sync_api import Page
-from the_internet.herokuapp import HerokuApp
+from gumroad.gumroad import GumroadApp
 
 @pytest.fixture
-def herokuapp(page: Page) -> HerokuApp:
-    """Instance of HerokuApp for each test."""
-    return HerokuApp(page)
+def gumroad(page: Page) -> GumroadApp:
+    """Instance of GumroadApp for each test."""
+    _gumroad = GumroadApp(page)
+    return _gumroad

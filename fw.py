@@ -1,2 +1,5 @@
-class Examples:
-    ADD_REMOVE_ELEMENTS = "/add_remove_elements/"
+class Locator:
+    USER = ".user"
+    PRODUCT_CARD = "article[class='product-card']"
+    ITEM_NAME = "h1[itemprop='name']"
+    ADD_TO_CART = ".accent.button"
